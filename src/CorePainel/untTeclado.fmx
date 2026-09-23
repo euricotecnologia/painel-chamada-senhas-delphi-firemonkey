@@ -1,0 +1,783 @@
+object frmTeclado: TfrmTeclado
+  Left = 0
+  Top = 0
+  Caption = 'Teclado'
+  ClientHeight = 549
+  ClientWidth = 272
+  Fill.Color = xFF3A3D50
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Contents
+    Margins.Left = 8.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 8.000000000000000000
+    Margins.Bottom = 8.000000000000000000
+    Size.Width = 256.000000000000000000
+    Size.Height = 533.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Top
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 256.000000000000000000
+      Size.Height = 96.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Color = xFFC8FC73
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 252.000000000000000000
+        Size.Height = 59.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFC8FC73
+        Stroke.Thickness = 3.000000000000000000
+        XRadius = 12.000000000000000000
+        YRadius = 12.000000000000000000
+        object lblDisplay: TLabel
+          Align = Center
+          StyledSettings = [Family]
+          Size.Width = 256.000000000000000000
+          Size.Height = 69.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 30.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF514D4D
+          TextSettings.HorzAlign = Center
+          TabOrder = 0
+          OnDblClick = lblDisplayDblClick
+        end
+      end
+      object lblDescritivo: TLabel
+        Align = Bottom
+        StyledSettings = [Family]
+        Position.Y = 63.000000000000000000
+        Size.Width = 256.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = ' --'
+        TabOrder = 0
+      end
+    end
+    object Layout3: TLayout
+      Align = Client
+      Size.Width = 256.000000000000000000
+      Size.Height = 429.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Scale
+        Size.Width = 255.999221801757800000
+        Size.Height = 426.068572998046900000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 24.999617649374440000
+          end
+          item
+            Value = 24.999921483602800000
+          end
+          item
+            Value = 25.000366745483620000
+          end
+          item
+            Value = 25.000094121539140000
+          end>
+        ControlCollection = <
+          item
+            Column = -1
+            Row = -1
+          end
+          item
+            Column = 0
+            Control = rectNum1
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = rectNum2
+            Row = 0
+          end
+          item
+            Column = 2
+            Control = rectNum3
+            Row = 0
+          end
+          item
+            Column = 3
+            Control = rectNumver1
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = rectNum4
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = rectNum5
+            Row = 1
+          end
+          item
+            Column = 2
+            Control = rectNum6
+            Row = 1
+          end
+          item
+            Column = 3
+            Control = rectPreferencial
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = rectNum7
+            Row = 2
+          end
+          item
+            Column = 1
+            Control = rectNum8
+            Row = 2
+          end
+          item
+            Column = 2
+            Control = rectNum9
+            Row = 2
+          end
+          item
+            Column = 3
+            Control = rectChamar
+            Row = 2
+          end
+          item
+            Column = 3
+            Control = rectNumVoltar
+            Row = 3
+          end
+          item
+            Column = 0
+            Control = rectNum0
+            Row = 3
+          end
+          item
+            Column = 1
+            ColumnSpan = 3
+            Control = rectProx
+            Row = 3
+          end
+          item
+            Column = 2
+            Control = Rectangle4
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 25.008833105153340000
+          end
+          item
+            Value = 24.995135065143800000
+          end
+          item
+            Value = 24.996189994049310000
+          end
+          item
+            Value = 24.999841835653560000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object rectNum1: TRectangle
+          Tag = 1
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.998825073242190000
+          Size.Height = 102.554779052734400000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          OnMouseDown = rectNum1MouseDown
+          OnMouseLeave = rectNum1MouseLeave
+          object lblNum1: TLabel
+            Tag = 1
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 59.998825073242190000
+            Size.Height = 102.554779052734400000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '1'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum2: TRectangle
+          Tag = 2
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.999603271484380000
+          Size.Height = 102.554779052734400000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum2: TLabel
+            Tag = 2
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.999603271484380000
+            Size.Height = 102.554779052734400000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '2'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum3: TRectangle
+          Tag = 3
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000747680664060000
+          Size.Height = 102.554779052734400000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum3: TLabel
+            Tag = 3
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 60.000747680664060000
+            Size.Height = 102.554779052734400000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '3'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNumver1: TRectangle
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000045776367190000
+          Size.Height = 102.554779052734400000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          object imgKimpar: TImage
+            MultiResBitmap.Height = 48
+            MultiResBitmap.Width = 48
+            MultiResBitmap = <
+              item
+                Width = 48
+                Height = 48
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                  87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0126494441546843EDD8416E8240180560202CD8EA196AD233B86DD38507E142
+                  ED2974D9C49D1EA027E8A26780255002F8D0878100A649933A7FFABECDE0308B
+                  F7C38CCEE889888888C8EFD475BDE1A53D4DD3C4499294FC680782875555BDA1
+                  3D63B70D98324B843F32FB196FB90FE15765597E32F7156FBB0DE15FB22C4B99
+                  798043DC858CED62FDBEC41DE330F7205BBB585F2F31E771F89FF3D94E42AE05
+                  A6CD2E08822776DD8D0FBC1C982D00C11FF0E4DFC3307C64D75DCD1510B01DC0
+                  937F2E8AE2C395F0B78C0A40F8384DD37D14450B76396DF20D583239AFDA2994
+                  E7F9D6A5B7F0BF16710B5F9D5F08BF46210776D984E9E4F40FD98F21A3CDAD44
+                  9FE9CD5C0745D8DD4E775084DD034D0799ED1E29FB90DDE6A1BE0F53CAEEDF2A
+                  222222226679DE09D6D97522B68045190000000049454E44AE426082}
+                FileName = 'C:\Users\rafa\Downloads\icons8-esquerda-48.png'
+              end>
+            Align = Center
+            OnClick = imgKimparClick
+          end
+        end
+        object rectNum4: TRectangle
+          Tag = 4
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.998825073242190000
+          Size.Height = 102.496414184570300000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum4: TLabel
+            Tag = 4
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.998825073242190000
+            Size.Height = 102.496414184570300000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '4'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum5: TRectangle
+          Tag = 5
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.999603271484380000
+          Size.Height = 102.496414184570300000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum5: TLabel
+            Tag = 5
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.999603271484380000
+            Size.Height = 102.496414184570300000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '5'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum6: TRectangle
+          Tag = 6
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000747680664060000
+          Size.Height = 102.496414184570300000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum6: TLabel
+            Tag = 6
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 60.000747680664060000
+            Size.Height = 102.496414184570300000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '6'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectPreferencial: TRectangle
+          Align = Client
+          Fill.Color = xFF0DA7D7
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000045776367190000
+          Size.Height = 102.496414184570300000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0DA7D7
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectPreferencialClick
+          object imgPref: TImage
+            MultiResBitmap = <
+              item
+                Width = 50
+                Height = 50
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+                  B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  04E0494441546843ED994B885B5518C7279399340954C7373E2A4241512C16EB
+                  C28D2814E9A8D856A53E28082E44A80B45A1B8AA0ABA1137E2035DB810975A5D
+                  5414418B425150AB20AE0415AD8EF6E584CCC4493279F8FBCEFD273337B94DEE
+                  9DB9F71A243F38395FCEF9CEF738F7E4DC736F26C68C193366CC9831FF2332AA
+                  63A3D56ADD40B5A3DD6E6F47DE54AD562FB6F67C3E3F373939792C93C97C4AF9
+                  9872D4DA470A82CE12F4FD8D46E32872284C9731F7216665E6BF8560B610D4D7
+                  5E78ED76AD563BDE6C365FA57D96721965838AC9B3F4BD663A52B784BEA2FD5A
+                  994B17FCE7717E3B41BD3E3F3F5FB3809697977FA6DA43193AC3A6C3F87B19F3
+                  8B8D351BD87A83B6BB291BA5961C3829501E6746FFB4000C8268D0F634625E6A
+                  A1B1319467B0D1345BA24452CF63F302A9C50B86AF67067F9233C7E2E2E202ED
+                  774A65CD6063A7D99259079BC4A9386CFBC0E0C3CCDA927C382A954AD99293CA
+                  BAC1E4B6DE64F0D9E2EABC88B8FEDD95601FF5CCAEA0E514EF6C013677F62C33
+                  876D1052591B18DE6E41CB5E17DA0F48257608FA59B9F181CF7D52890663F3F5
+                  7AFD57CFCC0ADA9D22FFB0C362B63BBBD96A4AA5D23F54974B2D3CCCC0939E89
+                  3EF6482531F06D37CA3EB85A6F49251C8CC92F2D2D9DF686AFC0B6FB1755E277
+                  627C4CB16B9D704E57C132AF91E4B952F331A9DA07636EE16CD437606A6AEA5D
+                  CE484D7D4D0C7C34A6A7A70FEA6B979999991CD53DDE373F674AE436893E70F0
+                  81C4C4C1D721893E882D70B73C5322374AECE507D589432281BEF89D5C27D147
+                  6022ACC38B24F6725275E23099C725FAE0467C097DE16E900B0B0B8B28F7A1EE
+                  D490DB3E98E88254BA045E111E805A12470EEE276D965D555FBB042692CBE5E6
+                  2476616D1E91E86056EE623B9ED324F5A1BEDD528FAC6F30E613895D0A85C269
+                  1209B73A08FAB067BE5DC2D83E4ADF917A50501D3819FC21F5C8FA1DF07D1665
+                  2FF7B5BF4D8707B12FD4351C94BF759607DCC5D53F14A947D6EF8564DCE19549
+                  7E474D3E0297163FF6AB257EA47A14F8CE3EC8C5BDCCE825309162B158B69A41
+                  57BA86D1E01AFBE0F75171DFC2C0E57BC92EA32D312EE9856AF661FD6190FABA
+                  9616316CE99CBD901F52F37050DEC851FA471B6887474B8C36DFD3A0FD30AD7F
+                  10E8FC2EF5C8FA063EEFC0F7DB1C16EBD68FFC2155B4A7458C9CC7C04366C0B0
+                  84D4E5A069F7A0E0AC0F1BBBA4BE16FD2BBC1E77EA5D26969711EDD0B83618BC
+                  D5590335A502EE9C5F12B487BBE80F5441AC7ADC4DEDAD20BEB6792EDBDFA869
+                  2081BB562FEC62A7ACC6E8F9AE2105F0E5361996DB09D73084508964B3D9CE1D
+                  37CDED78B3EABEBB7D10A11261EFFECC6A6669D635A400BE76588DEFCF5D431C
+                  70796FC6B01DECEC556951CD8981BFCDB6E5DA333AFEE25DCEDC1CBFB464D806
+                  9F535362E0E33DF97A454DF1C12CDD64BB17A5891CF802200E88FF294B42EF7E
+                  03CF55EB06C3FBCD892584FC04626CDB31B68A5C01773492FD5BD5153FF8C8E0
+                  E0008E5AE690E5F63DDF1FA16C924A243061FF935C45D9CF8DEF98D92C97CB15
+                  BE2776C57DE06857EF5F0C2457B5871F2B3A6EEC957A1766FC0596CCC98E9ECD
+                  BC863B989823545BA59E0E38CC11EC8304F73EBB59F7AFB40E04696F051F433C
+                  9BFA52FBE17A3D2B582224FD1B7D6FA293DAD63E1002D9406CE75821B0C037EA
+                  045E47EF0144A747198D3F420741C0F61FE361FBF3C67620E483049ED0B29998
+                  F8173CA238922C95AE350000000049454E44AE426082}
+                FileName = 'C:\Users\rafa\Downloads\icons8-idoso-50 - Copia.png'
+              end>
+            Align = Center
+            OnClick = rectPreferencialClick
+          end
+        end
+        object rectNum7: TRectangle
+          Tag = 7
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.998825073242190000
+          Size.Height = 102.500900268554700000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum7: TLabel
+            Tag = 7
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.998825073242190000
+            Size.Height = 102.500900268554700000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '7'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum8: TRectangle
+          Tag = 8
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.999603271484380000
+          Size.Height = 102.500900268554700000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum8: TLabel
+            Tag = 8
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.999603271484380000
+            Size.Height = 102.500900268554700000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '8'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectNum9: TRectangle
+          Tag = 9
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000747680664060000
+          Size.Height = 102.500900268554700000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object lblNum9: TLabel
+            Tag = 9
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 60.000747680664060000
+            Size.Height = 102.500900268554700000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '9'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectChamar: TRectangle
+          Align = Client
+          Fill.Color = xFF08D185
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000045776367190000
+          Size.Height = 102.500900268554700000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF08D185
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          object imgChamar: TImage
+            MultiResBitmap = <
+              item
+                Width = 50
+                Height = 50
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+                  B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  04F1494441546843ED98CB8B1C5514C67BAA7BBA933132336A4CD484286E7402
+                  2284183011C5F880B8508C892F50711588E84E0471AB662BFE01E2C28D068C8F
+                  85828208BE924183B812350A8A109D99CC388FEE99EEF6F79D3EB79CB22A4D77
+                  A64B7BA07F507DEFFDCEA97BBFAA5B557DAB0A03060C183040349BCD72BD5E3F
+                  56AD567FABD56ABF527F499A87D70F987E992D0107F3A287D70F9A05996F341A
+                  37B3ED555D9A87F38501F7B36DF4E69A9071E1CD547B2DC823DBEDDE4C42E08A
+                  D9D9D9F9E5E5E5EFA95FE472D7B0EFB5F87DAE65BBD99C9E9EAE69F3A666E859
+                  8AAB3DBD6BE44D1EE7E6E6FEA29FAD2EFF03D7EFAB1A88F22D97BA820176B0EF
+                  1B986EA89F7690436AFD75F6D9E6BB7705FB1E573F94AFB8D4820EB7D079956D
+                  85FAF52E4B7F88ED19F629BA94093907161717A7D479372C2D2D9D65DFFDDE4D
+                  26A415E5415E5CD27813F2CAB6447DB3CB16785A1D73846FBBA40E367073FE2C
+                  9DF8BD2EA72076371DC6974EB7B0EF227DDCEADDA520E53EE5E1E50C79159735
+                  2BEF48477BCAA542616565E54B8970C825193C2A81D82445E4720272B6CDCFCF
+                  9F53DE5A6066FEA0AFCBBDDB0484233C7CAD3C728EB8ACB11F9446ECF3206C97
+                  2043D4E32716D229E968075D4AC1597953393DE235EF3605B1434AC0F4572EC9
+                  F746796646A972AF85244CBDE7394A9A90A6334591F96F4CCE357452575E2FD0
+                  E5499F577AF709D02BABEEC1EB5CD6897C5F02F107227E764B1C1A1A3A69D116
+                  76030E0F0F9F40AF9992E6D1B1B1B1CC4BEE42A0AF618A875BAD24511455CBE5
+                  F209D5F17D8789806E9ED176CBC82E35203E10027B547210ADEB2F0372F679B5
+                  67D0E72D5E4D8169F342CE4D2600F5535EDD15D1D8E28D335E2AE106951C4848
+                  4CC1B4EEF46ACFE0EAB071B308A68337C73CA36D8D3074A91A989E5229D0C2B3
+                  F9772F532C2C2CD87EBD8447EC655ECDC2BC70B0AB73CC33DA78C44D34AA0647
+                  754EA5081ACC7899627474B4276BB2D58C8C8C5CECD52CA6F5C309BCC45A2D82
+                  36AE4B6B480D6624B5A00BB13EC11E2CC562B1612DC073EC2FE22CD851617ADC
+                  1440FBD3AB3DBF7CD6805D52954A25788B3DE3772AE208C3BD114F194F88B35E
+                  BDCACB7EC0FE63F84B08DE841D087EA7236627DCD03BBCD4947DE3D5F851D707
+                  D8FF1D3776F026EC7540C7A0EB6E520DB04441203CB3F79AD007042FC19B4033
+                  CFCCC8A46624FC3BC6671FEDA3999999264FAF7B380317FC92D52BF0B6092F07
+                  E489E6C72DD5B003217E5253B55D0BAF7F2F1A59A07D4A82D6318FB99440B13C
+                  F0EE13203FA1189E3E7149DA089E67E345A320E10B25221C3601A83FE93B7F4B
+                  91585311DBAC584E6CF2610CDA455E6DBF5380711F77591EC232FE33974C0C2F
+                  56B6301334CB74F0A374E2F7BB6C20ED939E1361ED6730F6418978F981420B4B
+                  03AFEF4A277ED4254B5EFDAA3BE1B2F4C36C3AC8924B069DE8635B2E30DEF33E
+                  8C81549207797149BE76E2B5CE967CD515980B1F1F8EBB94093B565813FDA2DC
+                  3CF0ABA0ED370279542E65F2E383C060479F83881D512779C2188FF87029E44D
+                  1ECFFB394890D4F6031D3BC61F24F204A33F516CF06153C8235BF607BA4E602A
+                  8FB586CA1F8DE5C3F616CEC01E3D0C7C9CDCD1CDCC981DAF2C3A5EA6F3BC3ECD
+                  02F3BC6F7079C0AC9C2E954A377AB32D1D7F3C60D912BF41FE57FC1F630EE85B
+                  B84F6FE3466DFB459E9BF84E4FEF6F30FA827B4E412CB104E97B307C174F9D0F
+                  F5D9551BF50FD6CD4C0C18306040CE140A7F03DDAEFB441E4B1EC30000000049
+                  454E44AE426082}
+                FileName = 'C:\Users\rafa\Downloads\icons8-alarme-50 - Copia.png'
+              end>
+            Align = Center
+            OnClick = rectChamarClick
+          end
+        end
+        object rectNumVoltar: TRectangle
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 60.000045776367190000
+          Size.Height = 102.516479492187500000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          Visible = False
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          object lblVoltar: TLabel
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 60.000045776367190000
+            Size.Height = 102.516479492187500000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '-'
+            TabOrder = 0
+          end
+        end
+        object rectNum0: TRectangle
+          Align = Client
+          Fill.Color = xFF606481
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 59.998825073242190000
+          Size.Height = 102.516479492187500000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectNum1Click
+          object Label2: TLabel
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 59.998825073242190000
+            Size.Height = 102.516479492187500000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '0'
+            TabOrder = 0
+            OnClick = rectNum1Click
+          end
+        end
+        object rectProx: TRectangle
+          Align = Client
+          Fill.Color = xFFEDAD44
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 188.000396728515600000
+          Size.Height = 102.516479492187500000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFEDAD44
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          OnClick = rectProxClick
+          object lblAvancar: TLabel
+            Align = Client
+            StyledSettings = [Family]
+            HitTest = True
+            Size.Width = 188.000396728515600000
+            Size.Height = 102.516479492187500000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Pr'#243'ximo'
+            TabOrder = 0
+            OnClick = rectProxClick
+          end
+        end
+        object Rectangle4: TRectangle
+          Align = Client
+          Fill.Color = xFF606481
+          Size.Width = 64.000747680664060000
+          Size.Height = 106.516479492187500000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF606481
+          Visible = False
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+          object Label6: TLabel
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 64.000747680664060000
+            Size.Height = 106.516479492187500000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = '-'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

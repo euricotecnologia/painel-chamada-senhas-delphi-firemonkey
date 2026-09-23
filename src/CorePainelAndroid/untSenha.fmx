@@ -1,0 +1,871 @@
+object frmSenha: TfrmSenha
+  Left = 0
+  Top = 0
+  Caption = 'Senha'
+  ClientHeight = 420
+  ClientWidth = 793
+  Fill.Color = xFF3A3D50
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object layPrincipal: TLayout
+    Align = Contents
+    Size.Width = 793.000000000000000000
+    Size.Height = 420.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object layImpressos: TLayout
+      Align = Contents
+      HitTest = True
+      Size.Width = 793.000000000000000000
+      Size.Height = 420.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnDblClick = layImpressosDblClick
+      object laySenhaPadaria: TLayout
+        Align = Center
+        Size.Width = 485.000000000000000000
+        Size.Height = 319.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        TabOrder = 0
+        object layPreferencial: TLayout
+          Align = Bottom
+          Margins.Top = 15.000000000000000000
+          Position.Y = 174.000000000000000000
+          Size.Width = 485.000000000000000000
+          Size.Height = 145.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout7: TLayout
+            Align = Left
+            Size.Width = 113.000000000000000000
+            Size.Height = 145.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Rectangle3: TRectangle
+              Align = Client
+              Fill.Color = xFFF60000
+              Size.Width = 113.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Thickness = 0.000000000000000000
+              XRadius = 15.000000000000000000
+              YRadius = 15.000000000000000000
+              object Label1: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Size.Width = 113.000000000000000000
+                Size.Height = 145.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 80.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'P'
+                TabOrder = 0
+              end
+            end
+          end
+          object Rectangle4: TRectangle
+            Align = Client
+            Fill.Color = xFFF60000
+            Margins.Left = 10.000000000000000000
+            Size.Width = 362.000000000000000000
+            Size.Height = 145.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFFF9F03
+            Stroke.Thickness = 0.000000000000000000
+            XRadius = 15.000000000000000000
+            YRadius = 15.000000000000000000
+            object Label2: TLabel
+              Align = Client
+              StyledSettings = [Family]
+              Margins.Left = 10.000000000000000000
+              Size.Width = 352.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 60.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+              Text = 'Preferencial'
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object Layout1: TLayout
+        Align = Client
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 793.000000000000000000
+        Size.Height = 410.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Client
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 793.000000000000000000
+          Size.Height = 261.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = layAcougue
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = layPadaria
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+            end>
+          object layAcougue: TLayout
+            Align = Right
+            Padding.Right = 10.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 24.500000000000000000
+            Size.Width = 362.000000000000000000
+            Size.Height = 261.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnClick = FormShow
+            object rectAcougue: TRectangle
+              Align = Client
+              Fill.Kind = None
+              Margins.Right = 10.000000000000000000
+              Size.Width = 342.000000000000000000
+              Size.Height = 261.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF06C26E
+              Stroke.Thickness = 6.000000000000000000
+              XRadius = 25.000000000000000000
+              YRadius = 25.000000000000000000
+              object lbltituloAcougue: TLabel
+                Align = Top
+                StyledSettings = [Family]
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 342.000000000000000000
+                Size.Height = 64.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 36.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = xFF06C26E
+                TextSettings.HorzAlign = Center
+                Text = 'A'#199'OUGUE'
+                TabOrder = 0
+                object ShadowEffect9: TShadowEffect
+                  Distance = 3.000000000000000000
+                  Direction = 45.000000000000000000
+                  Softness = 0.300000011920929000
+                  Opacity = 0.600000023841857900
+                  ShadowColor = claBlack
+                end
+              end
+              object GridPanelLayout2: TGridPanelLayout
+                Align = Top
+                Position.Y = 69.000000000000000000
+                Size.Width = 342.000000000000000000
+                Size.Height = 180.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                ColumnCollection = <
+                  item
+                    Value = 100.000000000000000000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = -1
+                    Row = 0
+                  end
+                  item
+                    Column = 0
+                    Control = rectAcougueNormal
+                    Row = 0
+                  end
+                  item
+                    Column = 0
+                    Control = rectAcouguePreferencial
+                    Row = 1
+                  end>
+                RowCollection = <
+                  item
+                    Value = 50.000000000000000000
+                  end
+                  item
+                    Value = 50.000000000000000000
+                  end>
+                object rectAcougueNormal: TRectangle
+                  Align = Top
+                  Anchors = []
+                  Fill.Color = xFF06C26E
+                  Margins.Left = 15.000000000000000000
+                  Margins.Top = 10.000000000000000000
+                  Margins.Right = 15.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 15.000000000000000000
+                  Position.Y = 10.000000000000000000
+                  Size.Width = 312.000000000000000000
+                  Size.Height = 66.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claWhite
+                  Stroke.Thickness = 3.000000000000000000
+                  XRadius = 25.000000000000000000
+                  YRadius = 25.000000000000000000
+                  OnClick = layPadariaNormalClick
+                  OnMouseDown = rectAcougueNormalMouseDown
+                  object layAcougueNormal: TLayout
+                    Align = Client
+                    HitTest = True
+                    Size.Width = 312.000000000000000000
+                    Size.Height = 66.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = layPadariaNormalClick
+                    OnMouseDown = layAcougueNormalMouseDown
+                    OnMouseLeave = layAcougueNormalMouseLeave
+                    object lblNormal: TLabel
+                      Align = Client
+                      StyledSettings = [Family]
+                      Margins.Left = 10.000000000000000000
+                      Size.Width = 302.000000000000000000
+                      Size.Height = 66.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Size = 28.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      TextSettings.HorzAlign = Center
+                      Text = 'NORMAL'
+                      TabOrder = 0
+                      object ShadowEffect3: TShadowEffect
+                        Distance = 3.000000000000000000
+                        Direction = 45.000000000000000000
+                        Softness = 0.300000011920929000
+                        Opacity = 0.600000023841857900
+                        ShadowColor = claBlack
+                      end
+                    end
+                  end
+                end
+                object rectAcouguePreferencial: TRectangle
+                  Align = Top
+                  Anchors = []
+                  Fill.Color = xFF06C26E
+                  Margins.Left = 15.000000000000000000
+                  Margins.Top = 15.000000000000000000
+                  Margins.Right = 15.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 15.000000000000000000
+                  Position.Y = 105.000000000000000000
+                  Size.Width = 312.000000000000000000
+                  Size.Height = 67.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claWhite
+                  Stroke.Thickness = 3.000000000000000000
+                  XRadius = 25.000000000000000000
+                  YRadius = 25.000000000000000000
+                  OnClick = layPadariaNormalClick
+                  object layAcouguePreferencial: TLayout
+                    Align = Client
+                    HitTest = True
+                    Size.Width = 312.000000000000000000
+                    Size.Height = 67.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = layPadariaNormalClick
+                    OnMouseDown = layAcouguePreferencialMouseDown
+                    OnMouseLeave = layAcouguePreferencialMouseLeave
+                    object Label7: TLabel
+                      Align = Client
+                      StyledSettings = [Family]
+                      Margins.Left = 10.000000000000000000
+                      Size.Width = 302.000000000000000000
+                      Size.Height = 67.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Size = 28.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      TextSettings.HorzAlign = Center
+                      Text = 'PREFERENCIAL'
+                      TabOrder = 0
+                      object ShadowEffect4: TShadowEffect
+                        Distance = 3.000000000000000000
+                        Direction = 45.000000000000000000
+                        Softness = 0.300000011920929000
+                        Opacity = 0.600000023841857900
+                        ShadowColor = claBlack
+                      end
+                    end
+                  end
+                end
+              end
+            end
+            object ShadowEffect5: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+              Enabled = False
+            end
+          end
+          object layPadaria: TLayout
+            Align = Left
+            Anchors = [akLeft, akTop]
+            Padding.Left = 10.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 406.500000000000000000
+            Size.Width = 363.000000000000000000
+            Size.Height = 261.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object q: TRectangle
+              Align = Client
+              Fill.Kind = None
+              Margins.Right = 10.000000000000000000
+              Size.Width = 343.000000000000000000
+              Size.Height = 261.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF8B70C
+              Stroke.Thickness = 6.000000000000000000
+              XRadius = 25.000000000000000000
+              YRadius = 25.000000000000000000
+              object lblTituloPadaria: TLabel
+                Align = Top
+                StyledSettings = [Family]
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 343.000000000000000000
+                Size.Height = 65.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 36.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = xFFF8B70C
+                TextSettings.HorzAlign = Center
+                Text = 'FRIOS'
+                TabOrder = 0
+                object ShadowEffect10: TShadowEffect
+                  Distance = 3.000000000000000000
+                  Direction = 45.000000000000000000
+                  Softness = 0.300000011920929000
+                  Opacity = 0.600000023841857900
+                  ShadowColor = claBlack
+                end
+              end
+              object rectPadariaNormal: TRectangle
+                Align = Top
+                Fill.Color = xFFFF9F03
+                Margins.Left = 15.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 15.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 80.000000000000000000
+                Size.Width = 313.000000000000000000
+                Size.Height = 66.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claWhite
+                Stroke.Thickness = 3.000000000000000000
+                XRadius = 25.000000000000000000
+                YRadius = 25.000000000000000000
+                object layPadariaNormal: TLayout
+                  Align = Client
+                  HitTest = True
+                  Size.Width = 313.000000000000000000
+                  Size.Height = 66.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  OnClick = layPadariaNormalClick
+                  OnMouseDown = layPadariaNormalMouseDown
+                  OnMouseLeave = layPadariaNormalMouseLeave
+                  object Label8: TLabel
+                    Align = Client
+                    StyledSettings = [Family]
+                    Margins.Left = 10.000000000000000000
+                    Size.Width = 303.000000000000000000
+                    Size.Height = 66.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 28.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'NORMAL'
+                    TabOrder = 0
+                    object ShadowEffect2: TShadowEffect
+                      Distance = 3.000000000000000000
+                      Direction = 45.000000000000000000
+                      Softness = 0.300000011920929000
+                      Opacity = 0.600000023841857900
+                      ShadowColor = claBlack
+                    end
+                  end
+                end
+              end
+              object rectPadariaPreferencial: TRectangle
+                Align = Top
+                Fill.Color = xFFFF9F03
+                Margins.Left = 15.000000000000000000
+                Margins.Top = 15.000000000000000000
+                Margins.Right = 15.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 166.000000000000000000
+                Size.Width = 313.000000000000000000
+                Size.Height = 67.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claWhite
+                Stroke.Thickness = 3.000000000000000000
+                XRadius = 25.000000000000000000
+                YRadius = 25.000000000000000000
+                object layPadariaPreferencial: TLayout
+                  Align = Client
+                  HitTest = True
+                  Size.Width = 313.000000000000000000
+                  Size.Height = 67.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  OnClick = layPadariaNormalClick
+                  OnMouseDown = layPadariaPreferencialMouseDown
+                  OnMouseLeave = layPadariaPreferencialMouseLeave
+                  object Label9: TLabel
+                    Align = Client
+                    StyledSettings = [Family]
+                    Margins.Left = 10.000000000000000000
+                    Size.Width = 303.000000000000000000
+                    Size.Height = 67.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 28.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'PREFERENCIAL'
+                    TabOrder = 0
+                    object ShadowEffect1: TShadowEffect
+                      Distance = 3.000000000000000000
+                      Direction = 45.000000000000000000
+                      Softness = 0.300000011920929000
+                      Opacity = 0.600000023841857900
+                      ShadowColor = claBlack
+                    end
+                  end
+                end
+              end
+            end
+            object ShadowEffect6: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+              Enabled = False
+            end
+          end
+        end
+        object Layout2: TLayout
+          Align = Top
+          Size.Width = 793.000000000000000000
+          Size.Height = 129.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object layTitulo: TLayout
+            Align = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 757.000000000000000000
+            Size.Height = 109.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object layMensagem: TLayout
+              Align = Client
+              Size.Width = 405.000000000000000000
+              Size.Height = 109.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Layout6: TLayout
+                Align = Client
+                Size.Width = 405.000000000000000000
+                Size.Height = 109.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Layout10: TLayout
+                  Align = Client
+                  Size.Width = 405.000000000000000000
+                  Size.Height = 60.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object Label5: TLabel
+                    Align = Client
+                    StyledSettings = [Family]
+                    Margins.Left = 10.000000000000000000
+                    Size.Width = 395.000000000000000000
+                    Size.Height = 60.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 55.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    TextSettings.VertAlign = Leading
+                    Text = 'SUA SENHA'
+                    TabOrder = 0
+                    object ShadowEffect7: TShadowEffect
+                      Distance = 3.000000000000000000
+                      Direction = 45.000000000000000000
+                      Softness = 0.300000011920929000
+                      Opacity = 0.600000023841857900
+                      ShadowColor = claBlack
+                      Enabled = False
+                    end
+                  end
+                  object GlowEffect1: TGlowEffect
+                    Softness = 0.400000005960464500
+                    GlowColor = claGold
+                    Opacity = 0.899999976158142100
+                    Enabled = False
+                  end
+                end
+                object Layout9: TLayout
+                  Align = Top
+                  Size.Width = 405.000000000000000000
+                  Size.Height = 49.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object Label3: TLabel
+                    Align = Client
+                    StyledSettings = [Family]
+                    Margins.Left = 10.000000000000000000
+                    Size.Width = 395.000000000000000000
+                    Size.Height = 49.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 36.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    TextSettings.VertAlign = Trailing
+                    Text = 'RETIRE AQUI'
+                    TabOrder = 0
+                    object ShadowEffect8: TShadowEffect
+                      Distance = 3.000000000000000000
+                      Direction = 45.000000000000000000
+                      Softness = 0.300000011920929000
+                      Opacity = 0.600000023841857900
+                      ShadowColor = claBlack
+                      Enabled = False
+                    end
+                  end
+                  object GlowEffect2: TGlowEffect
+                    Softness = 0.400000005960464500
+                    GlowColor = claGold
+                    Opacity = 0.899999976158142100
+                    Enabled = False
+                  end
+                end
+              end
+            end
+            object layLogo: TLayout
+              Align = Right
+              Position.X = 405.000000000000000000
+              Size.Width = 352.000000000000000000
+              Size.Height = 109.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object imgLogo: TImage
+                MultiResBitmap.Height = 148
+                MultiResBitmap.Width = 148
+                MultiResBitmap = <
+                  item
+                    Width = 148
+                    Height = 148
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000094000000940806000000753C00
+                      D4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      1F0D49444154785EED5C079855D5B55EF7DC7E67EECCC030C0D0912E20F159F0
+                      892528A2A231F6E833C45862D4BC8424A46862822431CFC4184B6C89C6184563
+                      D714A362C5026A54C0824A150718C019987A7B79FFBFCF39977BA731E4C5A8BC
+                      F57FB366EFB3DBD9E53F6BAFBDCF3E57140A8542A15028140A8542A15028140A
+                      8542A15028140A8542A15028140A8542A15028140A8542A15028140A8542A150
+                      28140A8542A15028140A8542A15028140A8542A15028140A8542A15028140A85
+                      42A15028140A8542A15028140A8542A15028140A8542A1502814BB1F3C8EFBAF
+                      C315CBCA64FCC841E2CDE7A4B92D251B37C7C5936A97B907C69D148ADD18BB4E
+                      A879F32C79A96A9844AD76B97FCE874EA88D792FF6973D865E2AFDFB9F2C996C
+                      469A1B9BA4A171A3B46E5B2D4D0DAF4A4BFB2B52D7BA521E9B93747228763378
+                      1DB77738EDEA01B231F23D290FFC5CCAABFCB2ECA1E79D1891EFDF5B2935D597
+                      4B24728E585654B2E9A824E235928AEF01771F4926674AE3D69365D35AAF6C3C
+                      7AB1C8A2BC9353B11BA1771AEAE4DFD7883F7DB264739788CF3750C2FE776B9B
+                      569C3FA5FDF5443E933F309DCEEEFFF4982327C998E913A5BCCC2BC1909D2F81
+                      59AE618BC8FAB522ABDE4B7A36D7BF9A6F6BBE4CA6CE5C222DE96AF15B2959F8
+                      9D3A3BB16277C0CE0975E6CDD3C4635D2CB9FC74F17923E2CFC786BEFFF4A229
+                      56A33FEF91BDA166FABE191DEFA91B7A90403B898420E51522C90488F48E04D6
+                      BC2E355B578A95686C6B2D1F784FD3C0CFAE124F603F49E72789956D916CFE2A
+                      C9F91FD46970F740F784A2ADB469C40998BEAE96BC0C81885444A572E55FF287
+                      64376703E1329F17816F79FACB3B657B493E181419344C64DC5E22EF2F93BEAF
+                      3C2013B6BC85EC22EF05474853648C64027DB339AF2F2796C72F39949743A1D9
+                      6CBBA433D74A327B993CF1DD76736FC5A7165D138A64DA3EEEF392F75C27F9FC
+                      2033F0E1A044EB5F91239B964BB06F8D7891B33EED9327DA878894D5888C192D
+                      E1AAA094AF785CF6A95B2A1E5F48DEF30E91B5BE112281BE227E6400B94026FC
+                      83E451660EACCA4052E9846433BF165FEE6772FFDC9DAE06F379E8C61DF65FCE
+                      E3F1909E5D02697D8E97793248CB47A3042C0F12425C0097F4B3CC38246DA7E8
+                      1A1DEAD1113DD68B407EE6651982B419BA1DE1DC833D47378F74598617A3B89C
+                      5E208B324C1F209F9F0EFDDDDD9FE8D0CE923A30CE2D8FE8BA1273EF3B513CB9
+                      EBD08E5AD84D02BB49CADBEB6446FD7352DDA70A5AC76314CC43EB42B22D3A54
+                      A4B642F6CA7C2023DBEAA4329F9197920364436680C47C98FA82A8730075F163
+                      5CBD70C9440FC4D64E36A132684B32159364FA5A696A9A2F8BE663BEEC1E68C4
+                      30C81990281AB31CF21024E5441780F8F1B95CEE4BF4237E1BE43A4849D98807
+                      DBE518A4C59C2D7832CCE0652CCB5A8DB0C7E15F0C7F97D331F28E419AB3E9B5
+                      4376C0B90F8C475984FC1B4C600720EF79286324D2C62057D275A20A403CEBC4
+                      B6D6A09CF570EF845BD0E4B8E6033007D29F977668B7C02D3C3723FF3AA4F742
+                      CE87402318F2DF8AF03576B21D403CCBDF1F722C2E2DA47B15F237F8330883B6
+                      907110F6CF72E4DFD6995073EF9B2A7EFF7D784E87A234BB8A414BF659FD88EC
+                      5F61C19CF24AC067C98255716968AB963E03F3322B542F7DCBCAA425EB958736
+                      D4484B1E440A81400190294C424148A80049C5F102586E9A84029952500429B8
+                      09FC6B4DCE91C7E6DEE8A4E812E8E403D0983FC10B36CB7D68E0B9C59D4C20BE
+                      12E9FE082F3B821D3617424215CA7508C17B1D0809A18C427F208E4F6113C2AE
+                      439A5FC0EDA43991E608C43DEA5C768469216433EEF9DFC8FF77135A04E47D16
+                      6590C8AD48331A691AED981D40FC38A4BB07DE49887F01FE53E16EB5634D191E
+                      A47913DEF17648CFC07D0E43FEE7E847BE0B91FF5A132172BBD7EBE5C35102C4
+                      47908E7D7406A41DF9BF06B913E1FD704D420671BD11FE66B80F3AA3EBE06B7F
+                      AC8646B948029E21860094CA0AA9DDB642F68FE4241C29C3222E22F5ED96B46C
+                      420B6ADAE58B03DA65F0A041920D95CB93F5FDA52555664F6FB0B06CCDE4102A
+                      82D904D3A691085681C6455808E212CE0F5518F6CD91A3AED8D7A95177E06079
+                      D03154C39D8887465A90FF82F7700849F200E42E34B8984CFD91E61A94C1345C
+                      9672905E43F87390B7E08F23AE1AFE8BE1FF3AD2F25E256079AC83538F160835
+                      912BDB207EC48D44DE9B51CE91704B1E608499FCF0769AC63AC0B415E94BC7AB
+                      084E39D4941CDCE27A140BE30AD338EA7F179C379DBCC7A3FC2926A208A8F368
+                      38B39C34EF41FEEEF4E324081F9666B8187449226D656905ABCB8E977060A6F8
+                      031E33C0E1306EDF2407B5AF91AAEA6A09854262F983F2FADA56993C5CE4C471
+                      51A9AEAE910A90E39D96A86C6C034938A5D112871633A4A26BA63D48D0215504
+                      1282F09A5A8BC2B49C122DEF6850E042A746FF14D0B03D2173D109E5B87C1F8D
+                      BE1CFE92A71F617C1A8FB0AF6409AECF847B2CD21D073F650E3A7833AE03F0FF
+                      00E51D6027ED16B722DD2945F24584DD8132D2286310F2B34DE8D08F141B70DF
+                      533BD4A34490E66D3BA90135E35DA823A7AC28EA780A0483B203B89E83FAF743
+                      9A1CDC2B207C50084ECF184443D4CD103FCACAEE20D4BC87AA24507E29881431
+                      036C08E597BD37BD2413FA834CD04E6110CCE30DC8404C7D27EC375C2AABFA48
+                      10248B9685E59D36D483BCE5AC411B89A422A94912432E87382412F248C82119
+                      EFE39289D3A10F197DBE3364EAFCA976C5760DE88010E416347C14FA8046F885
+                      90379C68038447219C867C70B7C13D03691642CC1387EB75706F83CC453C9FE8
+                      4A94F955C88EFEEA00A4AD47BE7F14C91308FB26A296DB29641A8476CE478914
+                      EE495BA6B81EC5F20A849AD40069A9191F81AC47387ADE3A0A6D1C6C2201B47D
+                      329CD9F423EE79380FD24F202F89498D48ED4E5B8AE56EB73B88AA3818B80083
+                      3BC40C3C251894707CAB4C0BA5255459854B5C8350357DA272D267274A05C2A8
+                      B118160C45647405F210864C2415FC2CDDF8E1315A0BA421A9C2201FEF614847
+                      71D21BC13FCBEB9788E71772E83C6787B4772099D00997A0F153E1D228FE39FC
+                      8FA3F125D322AE4721DCED380E3CB558C734EC2CDA1AAEA13A1112B5BD5D82B5
+                      2F01EEC14E7ED9BE9272D48F06F6270A68E7BB70FE4CBF43A0E9F4A3AE01C8D7
+                      D1063FC2DBE1BF06690B5333FC6D106AE5A590BB908E53A1A3A1AE78648058A1
+                      D3EC290A62EC19AFECD9B64106D5D414C8148984A52C1231B6944BA608AEAD40
+                      580E188EEB20C704E238B6DF11AEEAB84DC055631A0638FD7947F067A7735D04
+                      F842D3C413E8B5964283B91A61679C830E60494FA3813799C8CEE054E8A2F47D
+                      6411909F4BE936FBCA3C8950A9BB0C77104838BBBF3F41401B3995DD843EFB10
+                      2E4944439B5A9E36D20C3B952C812CB6BD3B80BC09C8320857B306760353D67E
+                      18D5614653B85A241397DA7C8B9497971BF254944764D1EA6659D110938A6899
+                      9461554721A1C220DAE42151993A117D9E40FF154884B2B3703308E3168159C9
+                      61BA8E419258E59B551E1291644C6B48472E18F121EC48CCC5BD1D84303AE187
+                      E89481F07335F213F8EBEDA852205DB136E9A459BA43877CBB0D480888BBDADB
+                      17EDFC3C5C2E568652D323EE01486165D9132CB9F75E2FA698CF88174F2DBBCB
+                      EC1161B26FD9280796F92440ED0442F97C7E7972E5366ED0404BD944A2D8A482
+                      7D05F7FC7DFBCBEC6921A9F5C3ECA01632847184D7DC1E88834871CC4609B886
+                      544C07C952908EE43202527972FBCA3EC27DA29EC02D01AAE5CB40A06954CFB8
+                      FE16FCEE54F3A900EACC47EAFF0C90814FE33F83DFA3EF56A1DFA8E97F08990D
+                      3FED987590BFA07EBD2AD7927581086A3101C3028D803C1CD464460626EAA56F
+                      658531BAA9811024D9C6985456F7C1AA3F6CA63B8A3BF585204110EBF82903E5
+                      3BD3AB64D6883C6C6C6822A395282412AE29D45214128AE1241A49E56A326A2D
+                      4E892283C5DBD6AD218B0E60237368FC89702FC03532CBCD68FC6D8CFF1481DB
+                      1C8351FFE11D056DA9457C6FA75A12805AA55339287F04DC0A3B5967E03E0D70
+                      EE411A6EEA4EA638E1DC5AD9447F6F604993272299CC5063B718FB0663D2DE22
+                      877963122E8F160813C35496D9DA222BB1522C03C15C0D65A63C920BE9686BF9
+                      024119DABF52CEDCBB8FDC748025870F865D6A6185C9A9B01DA46987766A0399
+                      38EDC548289089A4334242B11EE40590F7564BB866671A6A2C3AEBC7683497B0
+                      2FA2037E0D41619F18B8D3A421BFED2D05EADE076D780DF25E47C10073B7BE57
+                      9B96C01EC8F356C732282887C6B7796BD015D06769088D736E031820CF1B08BB
+                      C5B9EC152C097882028554989A38A8B10F65543422019084840A0602D28C71CF
+                      3635C8F2B5AD92F483548E0D55B0A3482A6AA920D2FB03B0A7431280C69A3D22
+                      22578E6D97CFD5D6CB84F20FA5AF051B371DB735531285925014AAC08C432E4E
+                      778487FB36B96203BA0418080ED618C800349E99DE8734413E0E384FC10EA04E
+                      5C491E625FC97608F76BBA04DA12E043D18530BC57B61BD315E5EB24480203B9
+                      4770E372B5ED35F82B08D5A95D3DC18276F24B2E5B6EA61963E7A4646066BB54
+                      62BA0B80487EBFDF689E2C92E6BC5EF9E08537E5C90FD3D2375A5E20934B28A6
+                      A3305F00F9E866BD3EACFE8272788547BE58D522A747EBE4C4C81A39D8B75A2A
+                      F3752011346D0A1A8C444A821369886B0678727E52DEBEE80C87445C7D3C830E
+                      63A71F8B0E388A71FF6E400B8C457D8E801C099909E1FB37BEB2E07603B108C2
+                      69A513903606F925BCF3E1FEA4835C0BD962A7EC1948F721E432275F27419257
+                      EC94DD82D31C1F5017C7A30D958EBF57B030E21EC9657C3B34544AC65B7190A4
+                      1C86B84FBC201189E1E32B946040929BEAE56777BF2C4BB37E19D4A742222095
+                      AB9DA8CD5C12322F5D8A8532F2166D7F9F54FB2C19EDCFC8BE8116F992EF7D39
+                      D7B74C8EB316CBE42C56A6E9B7F09C63154F4271EF8A99B8DAEB060E89F8D2F7
+                      627418E7FEBE70FF07C25701FF56E0DEE7A31EDC1C7D0CC2BDAF0508FB1C849B
+                      A775B8A62DD2DD498A18E27E8A3497A2BFE7150BC2AE437C97ABD52ED080727E
+                      DCB10C5710C7E57F970071FC90E3E11D668798364D44D8579CCB5E01A396CE41
+                      3BA5CD7463345452C6FAF2E2013950A0438A805456948BD76C784261BCBE5C4E
+                      FCF1BD72FD6B7592435C45B9BD2FE592C925942B688C119647A13F07C224B00E
+                      48411387BD24594C66816087E497C884F6BF354BA6ED2C4CEC57A28A9DDE8077
+                      0009B71A1DFF1D0C5C12E58F4227DC04E976AAFC28807B67212948DA9124640B
+                      E419D4ED2CC84B4ED2AEC09515A7A4AEC06D93DE6E9D305DB71A7D27E0F47C12
+                      FA8F2F9B5741CCD4877A9D0FFF70FA7B034B62B094D3E916638C1B494B99DF03
+                      F2D8247065704D95F8411A3044CC0BDDD56BE5D22B1F94336E5C28AFD6354A34
+                      12C2EA2F64C8E492C77529E8D0824BD07585DA28EBF14AC6E387D72B9556A6F9
+                      50EBF905F26CE21279E6A292D7265DC01488727E0FC77DA37F123AE254486F07
+                      E25F81FBD1BEAFA21ED4549473215F809C8EF0A7E03AF3F8271320CD057046D2
+                      8FBA525BFE0161D032C2E32D27A22F77667F1958920FC561886FB6C9040D0542
+                      8540268FE533836D488099A5B65F95046A309D7216F28150204F12D3E392A797
+                      CBACB9B7CB8C9B1E958D0DDBA502C4A256623E8265EC4C4C3A272D7DB94C76C3
+                      A2458B5099F930EC7A3710C8CB5701D7A01336E1DEDCE4E409813D9CE88F1CB8
+                      F74B90DB706F9E2BA270CAE359A85ED93F1F27D06724125F02533BF17C194F66
+                      7075B9116141F4E309900126F14E60C9F6640CB3DEFAC2D23D93119F3DC605E4
+                      61FBF6AB08CB8829189F1C22EDA3261010AB2C22122D93E52F6F9083AF5828DF
+                      BBED59797EC507128B25C40F4E798B1628A894E3EB1A6EBCC7EB592A33E60D93
+                      237E344D467FBDBBA9A013D0094BD0017738975350DEB7209C124B8074C515E9
+                      D0DAEED1215F4774BACFA701E81FBE6E219982201377C57F038176119EB17AC2
+                      2412E17122F38E6F67B064D4EC3854C2DBB0A15205C31C03CBC1752507F1485E
+                      CE396C0ABA8D1A0A7DE7E34901100A769311D85112289307D6A7E447CFD4CBC5
+                      7F794FEE7A71A5343536F17C1E07A3A4CC622986279B49E42CDFAB326CC8D512
+                      F2CF85CDBD2B844AC1F9153AE6553E6DF07F19E57FC144160161DB90C6DD132A
+                      18A11D8174DC5074F7C1F88234E9F8771BA04D13E01C6D5F09F79D9EA2877D09
+                      F90DBAA91D7D498DFF4DF8777AFCC692F99E1CE6AEA5D04CADF66E356C74908A
+                      FD4DC9406351DAE30999396584F8C7704A0543482AD84B4638059254418C7D24
+                      22894885BC1DAA95DB1B6AE4DC679BE5B78BD749B2B555028E4583CA1992D235
+                      7EDCC7F56772F975EF8C3B6E880C1E7CBC34352D95D577B6DAB97A0774420384
+                      476B5BD01111947915FC3CA65A0C1AFA2B6DAF70A9CF13A0259A0AD7B4194E83
+                      18BB02E0F18F5DAACBC701D4BBE769A0084E1B6741F6401FF0A80F8FB27CC038
+                      02EDA596321A1F7E6AA9D3E9EF09F610277CAF492ABDC6D6503989835819D852
+                      2452369B356E92AF49B012BCE848682992871ACAD552E6A01CC8E487F09B3C1A
+                      EF3CEB548585D6C871F25CF95EF2ED355572DF9A946C68C6439E4D7359532091
+                      2B1E28C9BAAAA18D6D879EF20559BB3A296D6D3C5EDBEB0E72818EE189CB1BD0
+                      49D458D528FBBBF0175E3BA07392487339C2B85CA78DB0007216AE2743C64078
+                      FC651EC2E6239E76453DD2DFE064FF2423827A1E8DFA1EDB83ECE9A4659FF783
+                      9C863672BAE6CB5FBE042ED9CDC735B59479F582B4DF809FAF82BA854DA8FBBF
+                      B24DE2EDB71AC33C9149B4B6279B3903924C2918DE946432298DCDAD3263D260
+                      D973647F5B43156B298AABA55C52D125D92A61CC0F1E252FF6DD5BEECE8D977B
+                      1AC2128FC5412A5B0BA2A29207811BB635E6D71F7EC118D954374ED6AD7C14B5
+                      730FA7ED12D0097C8DC055DF0A74167132FC1D373C7958EC4EDC9FFB57DC6AB8
+                      1AF200E44108CF705F84F030E21B5116CFA3AF30B93ED91884FAFE01F5BFBD1B
+                      B903620ECC39E0A95277E39586385FCF9400613C9AF23794CB077B2C841F7474
+                      6B773A9310100FDE2689F45B92F2C4966DC95C9F4D25D324924B2A122A914848
+                      C4CACAB469A37023DA521DC8C4D398D454245508D32D3FFA0CC1B60AD20F7295
+                      47A5B5DF505937F27059E0FF0FD990C2ED73D08224535393BC7EF0D73C12F70C
+                      907FBC9C145FF8FBF2DAEFB86CED0AACB7D9F771FC9D0032706F8A5A2801A10D
+                      F02B088FB618209EC75F2F82F716C4F30307DA073C3FCD0EE6C70F79846F429A
+                      6F40EE8574D29428CF621D28B8ECB5715F04931F2E8FCF7699DF094732930E36
+                      4927309E5A94F134A6D1E9E68C7757C2380C8E2970308AFE11BCEC479A09BF84
+                      307F09104643FD2178F9DA885FCA9C0CE1070A5DA2B411B3AE3A51ACFC2D9249
+                      5D78C3B1A1FD226595DF0885C33EBE4EE1FE92BB71E9B12CB9F8C9B5B264354C
+                      8A08C6A1A095E072DA33D39F43346E3370D79B3317ED604C9FDC9A306EEB56D9
+                      77CB62C9AD5B212BAAA648628FA9FC743D234DDB7E238FCCFBB65DA9CE4007F0
+                      0402CFEBB0937896E7794827F2A1E13EC8A9F0B223A9D6B98C7F87712E104F3B
+                      E23F2107A1DC5170D9E14D288F1AE929A45F05B74B203D0D4AD7A0E5F1DA5DD2
+                      A8C8CF2F723885700A266979CAB404A85F158407DDAA20DC827812F729ECB823
+                      8E9BA227C1CBF89D81E3CD8F125E429E11902371CD29EE0384719BA04B201D37
+                      898F86CBD730FCE48BA733BB7C675A4AA8A3AEA9904CFC42F17A165E39D3B7A5
+                      221AB9CD1F08CF70DFCFB99B967EAF4FE220C8794F6D962DDB519FB22252511B
+                      D14F8D45FB0A690DA178279E79229928FC541D9A4F126DE25FF9A6A4FD519403
+                      7EA412CBA5B5FD7479F8A29281FFA881CE22EB5161A3F1A809386DEEB2FDF6FF
+                      1DA5842A85E7AA5F5E35A5A222748F15088EE5BB3CF34ECFD9B4F47A3DB22E96
+                      93EFFD232649BE35305FB1706AA38058018A432A6E35F03930A70960941B22F1
+                      C401240531E7A262E07E3C292DC9D972CF85F7D955E80C3CD53CEC7F184407FB
+                      E30379F33078C0556009BA27D4A4B3F705390E3AEDA07E6F4C1FDBFFBB3EAFF7
+                      306F2018E08B5E6A293CBDE68BA9C5CD39B9717D485216B44B98D39E4B2A4818
+                      426D452D05C37B079178629367A41C522521F1F876ACEAE6C9E0BAEB653E77C8
+                      BB0634C93E104E514AA88F0FD4E20B41281E772941F7849A72CEFE525E768BF4
+                      E917AFED13BAE5A43D7213C797C979A18ACAB0075A07836A32F3073356263CF2
+                      F36DB077F9E9394944633CE24810422D45FB89DA280622C529B083E91A52C59A
+                      A19DE6C9D215D7CBA2F95D199E05706A0299794A130ECD07FB7D9D13463F233A
+                      910D713E84772ABB6338AEBDB8EE649C160369D87424EBFED82EEBD2319E65C3
+                      2984211E41A62CA6EDF19E4457657684531E92D97D047FB76523BED056FAE1F0
+                      3875A1EF989FD7C52E82E9377570C3E977C104DD63E299D364C0E03FC8D02143
+                      A4B26691849A37CCCEAD3B6678D8531BE1911518DF34D003286565D62B37A6C7
+                      48323CC02655181A8BAF65E8524BF1BC5502246A7788E4122A196B92F6F80F24
+                      507EB3CC9FDE2399084C7953D190CFA321DC6BA2613801FEE508E392F738080D
+                      57BE32E087994B21FB40780A919F7CF30B161EE1A8409E65C8B317FCFC0C9D9F
+                      3B3D063906C24FA59E81F00DFBB348478D18C1D3B810D7BC3F37F868CCF2FE1F
+                      209EE9FE8A345FA68BEB0FE1DF1FFEFDE1E794608C57840D8243A39F6FF1F945
+                      093AC9DC875FEB72079EA74DB9D8E0A75B87203DF77EB8B2E2C7990B10B71FC2
+                      F686CBCF965E403DF84916EF1DC6750C7124031F287E1ECF7EE48E37172EFC5A
+                      F839C40D84F0CB686E64D23EA596AF8630DD672034B8B91061B98B9096FB77FC
+                      BA7A06FCEC53AE9AF7C635D35033CD84707F8E063A06D246CF8422269F3D4E6A
+                      6AE6CA80DA9364C8F0B00CE89F91A8375A9D8FC9E0A62D126A6B9050BC4D7C20
+                      CBAA645EEA2AD05723C6A37A58748441284E7DD4503C624C43DC68289029D696
+                      9444F20569DDFE0BF9E931EE3BA39D020DE2CAED683482246287F1C71B78CC95
+                      1DFF3A849DCACFA3B9DFF230E248409E27E2A905BE8FE2007329CCDF09E00A8D
+                      87CE0EC0352EF3DC09E73597C54C4B5BEEB3902188FF2D04E3913B062E09C0FC
+                      7C5F380BD70BE19E04F72AC826F8E7C07D1869585F7E04C95F7629839F2B29BE
+                      EA2171B86DD188B0A1705F6318FC27C0651AD68B9BBA1C5C0E36F7C5BE8274DC
+                      47E207992B510F6E6DB89B94DCEEE07ED11AA4E117C05C2D52E37015CAE33303
+                      10360EF91E47BE7311C6DD70BE4C7F83F7879F0F1F3FD767BBBE0AE141409E7E
+                      5D0FE15B060C98F0E530373FF990B29E2C8384DA022910CA4C173DE2CD5BDF93
+                      CDADDF96FA0D67CB1BAFBD292F2D89CAF255D2B839236FE406C92B8109F25C68
+                      923C1D9824755EB4AB090F7B031E2C73BE0A36134944CD449B2989FA322C95D9
+                      2279EB2249A567EF0A991C50DDA6D111AE1A3F0E7E73E61A0DE3EF11F08B566E
+                      21B053463B9DCBA79761D450F016A603373C8E6B6E2BB4E09AE782600C9A959E
+                      1F820A9BEFF6DD8F34997E06AEA9D9385D92A823E05263F19AF5E20629BFC225
+                      9158DF36F8A971B891C8A79D3FA9C33670D00F86FB39B84CC7A79F83C5B258CE
+                      9E48C701E496C002A4A35670DBCDA986C2FAF001EA03C9220DEBCDD72829F80F
+                      867F3A5CB681E513AECB7793D4986C37CBE78F61700F8EBF28C83092916571B5
+                      4B977D46EDC645118FE350CB928C2461013B2714B1E2863679F6577F96E15B0F
+                      9258D35952BF69B1AC78AB41DE7D3B291B3FC89BA92B82A96D2834F04468F01A
+                      D853C600C7BD18D7D6968166829D147B47D2C9F9926E9C2C73F6BE5A2E39B4B7
+                      27113BC2D5AC1C18FEBC0D5F6AF2C42155082A629E4E4E737C0FE7762099C4F6
+                      166B65AAA5E26BE663E74F665A085FD7D04FADE2BE0FA486E40AE769F8591E3F
+                      90BC132E3B9EE5B10C3EB1774326B17C80E99641FE0AE1376FC6FE80C317B08F
+                      22FF9F704D727083F16770493A6A1A7E74C041E6311C9E49E74704D39CBC2E48
+                      7AEEC5B18E2CCFC4210D374B1F43D93C23C634C57908D689DA9A53384F7ADE88
+                      F4242FB74E9E87B0EF4C7FB9F743FCDD4EBB49AE3B704DCD5772ACA5E34D7A87
+                      532EAF147F700AE4331208ED2591F03009060648205C85E9CD8FEBACF8FC6D88
+                      DB2A8100E7F077C5E34587665E9573C6D7A3662586DCAE000DE027479C8EF834
+                      733A22616813607E95616824A2F32FC2CF0EA13DC48D43BE08E6A9016A193EFD
+                      2409A749928F9D4D5B829DC9C1DB8E386AB25AC4F3C727F8A453BD1F06FFBDF0
+                      4F874BCDF73A5C7E61CB2F6F1783C8DC407D19611B11463F09C04168C535EFC1
+                      CD416A4B1894268E761BEF7310D2D4210DA70EC6712A67FD4822C6D3D6E317D4
+                      6C0BF3500BD266AB85CB2F7E38E8D42A7CB5C4D749D454BC0FC3D94F7CD85827
+                      6A179EBFE734493B8E04E4B4C7F65153AD8390C8E311F608C2784A83E4A1A6E2
+                      03C2B70C14DA85340958579296F659E1ACFC3F47A802C0DCF37E47E33282D55C
+                      482AFAFB25E4B3C417E01230235E2B217DFAC6A56E73BC3706776F81C6923CEC
+                      08BE0CA59F1DC869A52F3B08FE16F8D9604E699CBECC4FCD387154F57DE0E7F4
+                      8025A6D96DE714D1C470F8A961F85B472401C96AD43EE2A2204E0B88C3F6728A
+                      E0EE7602E1FC499E38C2F9E367B4CD78FCB70C2E09C03A99290AD73C77C4BA90
+                      1484595101BC27D518EBCCB278749875A7F01EBC37EF4990946D48C336705AA2
+                      36219886D32BEB53BC12E483C2FA734AA49FF1D4EAEC0F96C536F2AD004F65F0
+                      576618CF7AB1DEEC5B4E67D4C85400BC1F3536EBC44580DB9FECABC22CA05028
+                      140A8542A15028140A8542A15028140A8542A15028140A8542A15028140A8542
+                      A15028140A8542A15028140A8542A15028140A8542A15028140A8542A1502814
+                      0A8542A15028140A8542A15028140A8542A15028140A8542A15028140A8542A1
+                      5028140A8542A15028143D41E47F010B3C83C0750AD6430000000049454E44AE
+                      426082}
+                  end>
+                Align = Left
+                Anchors = [akLeft, akRight, akBottom]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 204.000000000000000000
+                Size.Height = 99.000000000000000000
+                Size.PlatformDefault = False
+                WrapMode = Center
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

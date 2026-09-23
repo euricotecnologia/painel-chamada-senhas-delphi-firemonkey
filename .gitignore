@@ -1,0 +1,25 @@
+# Delphi / RAD Studio local files
+*.dproj.local
+*.identcache
+*.vlb
+*.rsm
+
+# Build output
+Win32/
+Win64/
+Android/
+OSX32/
+OSX64/
+__history/
+*.dcu
+*.exe
+*.apk
+*.aab
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local configuration and runtime data
+*.log

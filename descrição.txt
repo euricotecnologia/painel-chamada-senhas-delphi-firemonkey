@@ -1,0 +1,25 @@
+Sistema de Painel de Chamada de Senhas com codigo fontes em Delphi Firemonkey.
+
+
+*CorePainel de Chamadas*
+*Recursos*
+
+- Totalmente customizável os nomes do Painel, bastando apenas mudar os nomes em Configurações que altera automaticamente nos demais módulos.
+- Podendo realizar chamada de um Setor ou dois setores ao mesmo tempo
+- Letreiro digital customizável
+- Botão preferencial
+- Aviso sonoro de chamada
+- Segunda chamada
+- Próxima senha ou digitar manualmente
+- Etiqueta de chamada personalizada
+
+*Ramos*
+- Bancos
+- Cartórios
+- Supermercados
+- Açougue
+- Padarias
+- FastFood
+- Hospital
+- Clínicas
+- Qualquer ramo que trabalhe com senhas de chamadas
